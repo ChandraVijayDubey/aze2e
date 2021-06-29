@@ -4,67 +4,67 @@
     "parameters": {
         "subscriptionId": {
             "type": "string",
-            "value": "b0230136-daa0-44fa-bfd4-4703476cd519"
+            "defaultValue": "b0230136-daa0-44fa-bfd4-4703476cd519"
         },
         "name": {
             "type": "string",
-            "value": "cvdubey"
+            "defaultValue": "cvdubey"
         },
         "location": {
             "type": "string",
-            "value": "Canada Central"
+            "defaultValue": "Canada Central"
         },
         "hostingPlanName": {
             "type": "string",
-            "value": "asp-website"
+            "defaultValue": "asp-website"
         },
         "serverFarmResourceGroup": {
             "type": "string",
-            "value": "rg-website"
+            "defaultValue": "rg-website"
         },
         "alwaysOn": {
             "type": "bool",
-            "value": false
+            "defaultValue": false
         },
         "sku": {
             "type": "string",
-            "value": "Free"
+            "defaultValue": "Free"
         },
         "skuCode": {
             "type": "string",
-            "value": "F1"
+            "defaultValue": "F1"
         },
         "workerSize": {
             "type": "string",
-            "value": "0"
+            "defaultValue": "0"
         },
         "workerSizeId": {
             "type": "string",
-            "value": "0"
+            "defaultValue": "0"
         },
         "numberOfWorkers": {
             "type": "string",
-            "value": "1"
+            "defaultValue": "1"
         },
         "linuxFxVersion": {
             "type": "string",
-            "value": "DOCKER|mcr.microsoft.com/appsvc/staticsite:latest"
+            "defaultValue": "DOCKER|mcr.microsoft.com/appsvc/staticsite:latest"
         },
         "dockerRegistryUrl": {
             "type": "string",
-            "value": "https://mcr.microsoft.com"
+            "defaultValue": "https://mcr.microsoft.com"
         },
         "dockerRegistryUsername": {
             "type": "string",
-            "value": ""
+            "defaultValue": ""
         },
         "dockerRegistryPassword": {
             "type": "securestring",
-            "value": null
+            "defaultValue": null
         },
         "dockerRegistryStartupCommand": {
             "type": "string",
-            "value": ""
+            "defaultValue": ""
         }
     },
     "resources": [
