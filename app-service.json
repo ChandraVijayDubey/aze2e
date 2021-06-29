@@ -41,10 +41,6 @@
         "dockerRegistryPassword": {
             "type": "securestring",
             "defaultValue": null
-        },
-        "dockerRegistryStartupCommand": {
-            "type": "string",
-            "defaultValue": ""
         }
     },
     "resources": [
@@ -53,10 +49,10 @@
             "name": "[parameters('name')]",
             "type": "Microsoft.Web/sites",
             "location": "[parameters('location')]",
-            "tags": {},
-            "dependsOn": [
-                "[concat('Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]"
-            ],
+            "tags": {
+                "app": "website"
+            },
+            "dependsOn": [],
             "properties": {
                 "name": "[parameters('name')]",
                 "siteConfig": {
@@ -75,35 +71,15 @@
                         },
                         {
                             "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-                            "value": "false"
+                            "value": "true"
                         }
                     ],
                     "linuxFxVersion": "[parameters('linuxFxVersion')]",
-                    "appCommandLine": "[parameters('dockerRegistryStartupCommand')]",
-                    "alwaysOn": "[parameters('alwaysOn')]"
+                    "appCommandLine": "",
+                    "alwaysOn": true
                 },
                 "serverFarmId": "[concat('/subscriptions/', parameters('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]",
-                "clientAffinityEnabled": false
-            }
-        },
-        {
-            "apiVersion": "2018-11-01",
-            "name": "[parameters('hostingPlanName')]",
-            "type": "Microsoft.Web/serverfarms",
-            "location": "[parameters('location')]",
-            "kind": "linux",
-            "tags": {},
-            "dependsOn": [],
-            "properties": {
-                "name": "[parameters('hostingPlanName')]",
-                "workerSize": "[parameters('workerSize')]",
-                "workerSizeId": "[parameters('workerSizeId')]",
-                "numberOfWorkers": "[parameters('numberOfWorkers')]",
-                "reserved": true
-            },
-            "sku": {
-                "Tier": "[parameters('sku')]",
-                "Name": "[parameters('skuCode')]"
+                "clientAffinityEnabled": true
             }
         }
     ]
