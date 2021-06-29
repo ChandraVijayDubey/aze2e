@@ -3,52 +3,68 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscriptionId": {
-            "type": "string"
+            "type": "string",
+            "value": "b0230136-daa0-44fa-bfd4-4703476cd519"
         },
         "name": {
-            "type": "string"
+            "type": "string",
+            "value": "cvdubey"
         },
         "location": {
-            "type": "string"
+            "type": "string",
+            "value": "Canada Central"
         },
         "hostingPlanName": {
-            "type": "string"
+            "type": "string",
+            "value": "asp-website"
         },
         "serverFarmResourceGroup": {
-            "type": "string"
+            "type": "string",
+            "value": "rg-website"
         },
         "alwaysOn": {
-            "type": "bool"
+            "type": "bool",
+            "value": false
         },
         "sku": {
-            "type": "string"
+            "type": "string",
+            "value": "Free"
         },
         "skuCode": {
-            "type": "string"
+            "type": "string",
+            "value": "F1"
         },
         "workerSize": {
-            "type": "string"
+            "type": "string",
+            "value": "0"
         },
         "workerSizeId": {
-            "type": "string"
+            "type": "string",
+            "value": "0"
         },
         "numberOfWorkers": {
-            "type": "string"
+            "type": "string",
+            "value": "1"
         },
         "linuxFxVersion": {
-            "type": "string"
+            "type": "string",
+            "value": "DOCKER|mcr.microsoft.com/appsvc/staticsite:latest"
         },
         "dockerRegistryUrl": {
-            "type": "string"
+            "type": "string",
+            "value": "https://mcr.microsoft.com"
         },
         "dockerRegistryUsername": {
-            "type": "string"
+            "type": "string",
+            "value": ""
         },
         "dockerRegistryPassword": {
-            "type": "securestring"
+            "type": "securestring",
+            "value": null
         },
         "dockerRegistryStartupCommand": {
-            "type": "string"
+            "type": "string",
+            "value": ""
         }
     },
     "resources": [
