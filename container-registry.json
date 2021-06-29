@@ -1,0 +1,56 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "registryName": {
+            "type": "String",
+            "defaultValue": "cvdubey"
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "Canada Central"
+        },
+        "registryLocation": {
+            "type": "String",
+            "defaultValue": "canadacentral"
+        },
+        "zoneRedundancy": {
+            "type": "String",
+            "defaultValue": "disabled"
+        },
+        "registrySku": {
+            "type": "String",
+            "value": "Basic"
+        },
+        "registryApiVersion": {
+            "type": "String",
+            "defaultValue": "2020-11-01-preview"
+        },
+        "tags": {
+            "type": "Object",
+            "defaultValue": {}
+        },
+        "publicNetworkAccess": {
+            "type": "String",
+            "defaultValue": "Enabled"
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.ContainerRegistry/registries",
+            "apiVersion": "[parameters('registryApiVersion')]",
+            "name": "[parameters('registryName')]",
+            "location": "[parameters('registryLocation')]",
+            "dependsOn": [],
+            "tags": "[parameters('tags')]",
+            "sku": {
+                "name": "[parameters('registrySku')]"
+            },
+            "properties": {
+                "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
+                "zoneRedundancy": "[parameters('zoneRedundancy')]"
+            }
+        }
+    ],
+    "outputs": {}
+}
