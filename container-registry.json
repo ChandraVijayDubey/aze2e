@@ -4,11 +4,7 @@
     "parameters": {
         "registryName": {
             "type": "String",
-            "defaultValue": "cvdubey"
-        },
-        "location": {
-            "type": "string",
-            "defaultValue": "Canada Central"
+            "defaultValue": "cr4website"
         },
         "registryLocation": {
             "type": "String",
@@ -28,7 +24,9 @@
         },
         "tags": {
             "type": "Object",
-            "defaultValue": {}
+            "defaultValue": {
+                "app": "website"
+            }
         },
         "publicNetworkAccess": {
             "type": "String",
