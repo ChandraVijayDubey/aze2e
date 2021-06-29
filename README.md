@@ -14,7 +14,14 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
 ```
 [Edit](container-registry.json)
 
-### 2. App Service
+### 3. App Service Plan
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FChandraVijayDubey%2Faze2e%2Fmaster%2Fapp-service-plan.json)
+```
+https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FChandraVijayDubey%2Faze2e%2Fmaster%2Fapp-service-plan.json
+```
+[Edit](app-service-plan.json)
+
+### 3. App Service
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FChandraVijayDubey%2Faze2e%2Fmaster%2Fapp-service.json)
 ```
 https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FChandraVijayDubey%2Faze2e%2Fmaster%2Fapp-service.json
