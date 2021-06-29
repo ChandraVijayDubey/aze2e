@@ -60,6 +60,7 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
 			Enter personal access token > ***
 			```
 		- `./run.sh`
+- Enable Admin on Container Registry: (https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account)
 - Setup Repository: (https://dev.azure.com/organisation/_git/project)
 - Setup Pipelines: (https://dev.azure.com/organisation/_git/project?path=%2Fazure-pipelines.yml)
 - Setup Build & Release: (https://dev.azure.com/organisation/project/_build)

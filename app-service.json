@@ -24,43 +24,23 @@
         },
         "alwaysOn": {
             "type": "bool",
-            "defaultValue": false
-        },
-        "sku": {
-            "type": "string",
-            "defaultValue": "Free"
-        },
-        "skuCode": {
-            "type": "string",
-            "defaultValue": "F1"
-        },
-        "workerSize": {
-            "type": "string",
-            "defaultValue": "0"
-        },
-        "workerSizeId": {
-            "type": "string",
-            "defaultValue": "0"
-        },
-        "numberOfWorkers": {
-            "type": "string",
-            "defaultValue": "1"
+            "defaultValue": true
         },
         "linuxFxVersion": {
             "type": "string",
-            "defaultValue": "DOCKER|mcr.microsoft.com/appsvc/staticsite:latest"
+            "defaultValue": "DOCKER|cr4website.azurecr.io/as-website:latest"
         },
         "dockerRegistryUrl": {
             "type": "string",
-            "defaultValue": "https://mcr.microsoft.com"
+            "defaultValue": "https://cr4website.azurecr.io"
         },
         "dockerRegistryUsername": {
             "type": "string",
-            "defaultValue": ""
+            "defaultValue": "cr4website"
         },
         "dockerRegistryPassword": {
             "type": "securestring",
-            "defaultValue": "undefined"
+            "defaultValue": null
         },
         "dockerRegistryStartupCommand": {
             "type": "string",
